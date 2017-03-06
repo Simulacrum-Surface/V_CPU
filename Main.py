@@ -1,4 +1,4 @@
-#!/env/usr/bin python3.6
+#!/usr/bin/env python3.6
 # -*- coding: utf-8 -*-
 
 """
@@ -331,8 +331,8 @@ class GUI_MainWindow(object):
         self.inputContainer.setText("0")
         return
 
-    def generate(self): # generates a various number of ps.rand. integers for the input channel
-        rnd = "" # init the rnd String
+    def generate(self): # generates a various number of random integers for the input channel
+        rnd = ""
         quant = 0 # how many numbers will be generatet
         if(self.action10.isChecked()):
             quant = 10
@@ -483,9 +483,6 @@ class GUI_MainWindow(object):
                         tmp = self.errorBoxContainer.toPlainText()
                         self.errorBoxContainer.setPlainText(tmp + "\nYou forgot the BEQ param, Command skipped")
                         self.comPointer += 1
-
-
-
 
                 elif self.comList[self.comPointer][1] in self.commandInterpreter:
                     tmp = self.comList[self.comPointer][1]

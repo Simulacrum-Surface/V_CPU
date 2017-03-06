@@ -2,7 +2,7 @@
 
 About this tool:
 
-Its an emulator for a notional assembly language, used in XYZ 
+Its an emulator for a notional assembly language, used in "Theoretische Informatik" by Hoffmann, Dirk W. (eISBN: 978-3-446-42854-6) 
 
 For the syntax and more information, please refer to the book.
 
