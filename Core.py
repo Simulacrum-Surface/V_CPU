@@ -11,7 +11,7 @@ Made for educational purpose only.
 
 
 def assign():
-    global counterForInput
+    global counterForInputü
     counterForInput = 0
 
 def regChecker(self, param, register):
@@ -119,11 +119,17 @@ def mul(self, param, empty, register):
 def div(self, param, empty, register):
     if (param[0] is "#"):  # Addiere X zum Akku
         if(int(param[1:]) == 0):
-            self.errorBoxContainer.setPlainText(self.errorBoxContainer.toPlainText() + "\nYou are trying to devide by 0 - skipped")
+            self.errorBoxContainer.setPlainText(
+                self.errorBoxContainer.toPlainText() + "\nYou are trying to devide by 0 - skipped")
         else:
-            currentValue = int(self.akkuContainer.text())
-            newAkku = int(currentValue / int(param[1:]))
-            self.akkuContainer.setText(str(newAkku))
+            try:
+                currentValue = int(self.akkuContainer.text())
+                newAkku = int(currentValue / int(param[1:]))
+                self.akkuContainer.setText(str(newAkku))
+            except ZeroDivisionError:
+                self.errorBoxContainer.setPlainText(
+                    self.errorBoxContainer.toPlainText() + "\nYou are trying to devide by 0 - skipped")
+
 
     elif (param[0] is "("):  # Add Value from indir. Reg
         # Cut Param
@@ -150,7 +156,12 @@ def lda(self, param, empty, register):
         elif (param[0] is "("):  # Add Value from indir. Reg
             param = param[1:len(param) - 1]
             if regChecker(self, param, register) == True:
-                self.akkuContainer.setText(str(register[str(register[param])]))
+                try:
+                    self.akkuContainer.setText(str(register[str(register[param])]))
+                except KeyError:
+                    self.errorBoxContainer.setPlainText(
+                        self.errorBoxContainer.toPlainText() + "\nYou are trying to access a memory part not initialized yet")
+
             return
         else:
             if regChecker(self, param, register) == True:

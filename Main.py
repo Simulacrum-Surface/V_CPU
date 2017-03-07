@@ -343,7 +343,7 @@ class GUI_MainWindow(object):
         if(self.actionTill0.isChecked()):
             x = random.randint(0, 100) # Amount of numbers till a 0 gets added
             for i in range(0, x):
-                tmp = random.randint(0, 200)
+                tmp = random.randint(1, 200)
                 rnd = rnd + str(tmp) + " "
             rnd = rnd + " 0"
 

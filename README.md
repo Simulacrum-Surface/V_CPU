@@ -13,10 +13,10 @@ Please forgive me PEP.
 
 Known Errors: </br>
 
-- No Error when user tries to use uninitialized register
-- When generation a 0 terminated number sequenz, it's possible that a 0 sneaked in before the actual end is reached
-- Displaying the register is a desaster :D (a better overview will appear in the rewritten code)
-- Zero-Division will be detectet only if you divide by 0 with DIV #0. </br>
+- (FIXED) No Error when user tries to use uninitialized register
+- (FIXED) When generation a 0 terminated number sequenz, it's possible that a 0 sneaked in before the actual end is reached
+- Displaying the register is a desaster :D (-> a better overview will appear in the rewritten code)
+- (FIXED) Zero-Division will be detectet only if you divide by 0 with DIV #0. </br>
 LDA #0 </br>
 STA 1 </br>
 LDA #10 </br>
