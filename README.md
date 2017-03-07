@@ -11,7 +11,9 @@ This code was hacked together without a straight concept! Do NOT use this as an 
  
 Please forgive me PEP.
 
+
 Known Errors: </br>
+
 
 - (FIXED) No Error when user tries to use uninitialized register
 - (FIXED) When generation a 0 terminated number sequenz, it's possible that a 0 sneaked in before the actual end is reached
@@ -25,6 +27,7 @@ OUT</br>
 END</br></br>
 In this case, it wont be detected.
 
+Shoutout to t0mat0hater for the bug-report.
 
 Greetings,
 Simulacrum
