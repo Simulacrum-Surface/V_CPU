@@ -11,6 +11,20 @@ This code was hacked together without a straight concept! Do NOT use this as an 
  
 Please forgive me PEP.
 
+Known Errors: </br>
+
+- No Error when user tries to use uninitialized register
+- When generation a 0 terminated number sequenz, it's possible that a 0 sneaked in before the actual end is reached
+- Displaying the register is a desaster :D (a better overview will appear in the rewritten code)
+- Zero-Division will be detectet only if you divide by 0 with DIV #0. 
+LDA #0 </br>
+STA 1 </br>
+LDA #10 </br>
+DIV 1</br>
+OUT</br>
+END</br></br>
+In this case, it wont be detected.
+
 
 Greetings,
 Simulacrum
