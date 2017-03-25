@@ -9,11 +9,11 @@ For the syntax and more information, please refer to the book.
 
 Requirements:
 </br> </br>
--Python 3.X
+-Python 3.X</br>
 -PyQt5
  </br> </br>
 How To:</br>
-Just execute Main.py.
+Just execute the Main.py.
 </br></br>
 
 NOTE: </br>
