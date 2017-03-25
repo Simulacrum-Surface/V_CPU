@@ -24,7 +24,7 @@ Please forgive me PEP.
 
 
 
-Known Errors: </br>
+Known Bugs: </br>
 
 
 - (FIXED) No Error when user tries to use uninitialized register
