@@ -6,11 +6,22 @@ Its an emulator for a notional assembly language, used in "Theoretische Informat
 
 For the syntax and more information, please refer to the book.
 
+
+Requirements:
+</br> </br>
+-Python 3.X
+-PyQt5
+ </br> </br>
+How To:</br>
+Just execute Main.py.
+</br></br>
+
 NOTE: </br>
 >Im very grateful for every bugreport :)
 This code was hacked together without a straight concept! Do NOT use this as an example of good coding style. Do NOT read the sourcecode if you want to learn something python-specific. A reimplementation is planned. I released this to command a view.
  
 Please forgive me PEP.
+
 
 
 Known Errors: </br>
