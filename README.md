@@ -39,7 +39,7 @@ OUT</br>
 END</br></br>
 In this case, it wont be detected.
 
-Shoutout to t0mat0hater for the bug-report.
+Shoutout to t0mat0hater for testing && the bug-report.
 
 Greetings,
 Simulacrum
