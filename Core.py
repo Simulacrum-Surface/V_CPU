@@ -11,7 +11,7 @@ Made for educational purpose only.
 
 
 def assign():
-    global counterForInputü
+    global counterForInput
     counterForInput = 0
 
 def regChecker(self, param, register):
